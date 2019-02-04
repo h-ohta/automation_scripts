@@ -5,4 +5,6 @@ sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/
 sudo apt update
 sudo apt install -y cuda-9-2
 
+echo "export PATH=/usr/local/cuda-9.2/bin:\${PATH}" | tee -a ~/.bashrc
+echo "export LD_LIBRARY_PATH=/usr/local/cuda-9.2/lib64:\${LD_LIBRARY_PATH}" | tee -a ~/.bashrc
 rm -rf *.deb
