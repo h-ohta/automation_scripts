@@ -7,4 +7,4 @@ pkill Xorg
 
 sudo add-apt-repository -y ppa:graphics-drivers/ppa
 sudo apt update
-sudo apt install nvidia-410
+sudo apt install -y nvidia-410

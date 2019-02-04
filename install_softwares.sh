@@ -4,7 +4,7 @@
 sudo add-apt-repository -y ppa:nilarimogard/webupd8 && sudo apt-get update && sudo apt-get install -y albert && echo -e "[Desktop Entry]\nName=Albert\nGenericName=\nComment=\nExec=albert\nTerminal=false\nType=Application\nIcon=albert\nCategories=\nStartupNotify=false" > ~/.config/autostart/albert.desktop
 
 # Keepass XC
-sudo add-apt-repository ppa:phoerious/keepassxc && sudo apt-get update && sudo apt install -y keepassxc
+sudo add-apt-repository -y ppa:phoerious/keepassxc && sudo apt-get update && sudo apt install -y keepassxc
 
 # Slack
 sudo snap install slack --classic
