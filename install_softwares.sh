@@ -28,4 +28,4 @@ wget -qO- http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key ad
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - && sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' && sudo apt update && sudo apt install -y google-chrome-stable
 
 # Dropbox
-echo "deb http://linux.dropbox.com/ubuntu xenial main" | sudo tee -a /etc/apt/sources.list && sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E && sudo apt update && sudo apt install -y dropbox
+echo "deb http://linux.dropbox.com/ubuntu xenial main" | sudo tee -a /etc/apt/sources.list.d/dropbox.list && sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E && sudo apt update && sudo apt install -y dropbox
